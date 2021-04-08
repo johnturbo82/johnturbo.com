@@ -1,0 +1,12 @@
+#footer {
+    background-color: $first-color;
+    border-top: 10px solid $border-separators;
+    border-bottom: 10px solid $border-separators;
+}
+.footer {
+    color: $font-color-light;
+
+    a {
+        color: $link-color-light;
+    }
+}
