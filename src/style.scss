@@ -1,8 +1,8 @@
 /*
 Color scheme
 */
-$first-color:             #2bc46d;
-$second-color:            #272d2d;
+$first-color:             #ff6978;
+$second-color:            #12355b;
 $third-color:             #4870a7;
 $highlight:               #ffffff;
 
@@ -14,9 +14,12 @@ $font-color-light:        #ffffff;
 $link-color-dark:         #2f3f57;
 $link-color-light:        #ffffff;
 
-$border-separators:         $first-color;
+$border-separators:         $second-color;
 $menu-bars:                 $second-color;
 $menu:                      $first-color;
+
+$title-text-shadow:         2px 2px 0 $first-color, -2px -2px 0 $highlight;
+$title-color:               $second-color;
 
 /*
 Recurring effects
@@ -26,9 +29,9 @@ $box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1p
 /*
 Fonts
 */
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Permanent+Marker&display=swap');
-$headline_font:     'Permanent Marker', cursive;
-$text_font:         'New Tegomin', serif;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap');
+$headline_font:     'Press Start 2P', cursive;
+$text_font:         'Roboto Slab', serif;
 
 /*
 Components
