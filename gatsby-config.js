@@ -5,11 +5,12 @@ module.exports = {
     street: "Steigerwaldstr. 33",
     postal_code: "85049",
     city: "Ingolstadt",
-    email: "oliver@schoettner.rocks",
-    mailto: "mailto:oliver@schoettner.rocks",
+    email: "me@johnturbo.com",
+    mailto: "mailto:me@johnturbo.com",
     mobile: "0170 / TURBO ON",
     mobileto: "tel:+491708872666",
-    siteUrl: "https://schoettner.rocks"
+    siteUrl: "https://johnturbo.com",
+    land: 'de',
   },
   plugins: [
     {
