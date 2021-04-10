@@ -10,7 +10,7 @@ module.exports = {
     mobile: "0170 / TURBO ON",
     mobileto: "tel:+491708872666",
     siteUrl: "https://johnturbo.com",
-    land: 'de',
+    lang: 'de',
   },
   plugins: [
     {
