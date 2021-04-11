@@ -47,3 +47,12 @@ Components
 @import "common/styles/scss/components/header";
 @import "common/styles/scss/components/breadcrump";
 @import "common/styles/scss/components/instagram";
+
+/*
+Overwrites
+*/
+.header .title a {
+    @include xs {
+        font-size: 1.5rem !important;
+    }
+}
