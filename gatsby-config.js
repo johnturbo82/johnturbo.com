@@ -61,5 +61,21 @@ module.exports = {
             access_token: "IGQVJVY25kZA2FoM2F6LXJuTmZAxVkVBVl9fMXdaQTViZAzUwdmNqRTlsY3ZA2Q3ZApUzNkWEh5WDM5YlJ3bjFYYWNYSl9uRlc0ejdTRE5OY0ZAPZAnpaZAU1fX1owM0x5QVhYTnY3S1FIenNva2Q3ai05b0l5aQZDZD"
         }
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-VBG89CB1KC", // Google Analytics / GA
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
+      },
+    },
   ],
 };
