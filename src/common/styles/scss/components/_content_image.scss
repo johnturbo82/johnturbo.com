@@ -1,0 +1,60 @@
+.content.text {
+    figure {
+        background-color: $first-color;
+        color: $font-color-light;
+        padding: 1px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    figure.full {
+        width: 100%;
+    }
+    figure.left {
+        @include xs {
+            width: 100%;
+        }
+        @include sm {
+            width: 50%;
+            float: left;
+            margin-right: 20px;
+        }
+        @include md {
+            width: 25%;
+            float: left;
+            margin-right: 20px;
+        }
+    }
+    figure.right {
+        @include xs {
+            width: 100%;
+        }
+        @include sm {
+            width: 50%;
+            float: right;
+            margin-left: 20px;
+        }
+        @include md {
+            width: 25%;
+            float: right;
+            margin-left: 20px;
+        }
+    }
+    .flex-container {
+        display: grid;
+        @include xs {
+            grid-template-columns: repeat(1, 100%);
+        }
+        @include sm {
+            grid-gap: 24px;
+            grid-template-columns: repeat(2, calc(50% - 12px));
+        }
+        @include md {
+            grid-gap: 24px;
+            grid-template-columns: repeat(3, calc(33.33% - 16px));
+        }
+    }
+    figcaption {
+        padding: 4px;
+        font-size: 90%;
+    }
+}
