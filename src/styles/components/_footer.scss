@@ -1,0 +1,25 @@
+#footer {
+    background-color: $first-color;
+    border-top: 10px solid $border-separators;
+    border-bottom: 10px solid $border-separators;
+}
+.footer {
+    color: $font-color-light;
+    padding: 30px 0;
+
+    .stage {
+        z-index: 10;
+        position: relative;
+    }
+
+    a {
+        color: $link-color-light;
+        text-decoration: none;
+    }
+
+    .inline-image {
+        margin-right: 10px;
+        margin-top: 4px;
+        vertical-align: bottom;
+    }
+}

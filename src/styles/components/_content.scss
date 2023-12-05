@@ -1,0 +1,168 @@
+.content-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+
+    @include xs {
+        padding: 10px;
+    }
+}
+
+.content {
+    flex-grow: 1;
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+.content.text {
+    background-color: $highlight;
+    box-shadow: $box-shadow;
+    padding: 45px;
+    margin: 0px auto 20px;
+    line-height: 1.7em;
+
+    img {
+        width: 100%;
+    }
+
+    @include xs {
+        padding: 15px;
+    }
+
+    .stage {
+        z-index: 10;
+        position: relative;
+    }
+
+    a {
+        text-decoration: none;
+        color: $link-color-dark;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        color: $third-color;
+    }
+    a:after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        background-color: $second-color;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: background-color 0.3s ease;
+    }
+    a:hover:after {
+        background-color: $first-color;
+    }
+
+    .social-icons {
+        a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: $background-color-dark;
+            padding: 5px;
+            border-radius: 3px;
+            border: none;
+        }
+        a + a {
+            margin-left: 10px;
+        }
+        a:after {
+            display: none;
+        }
+        a:hover:after {
+            display: none;
+        }
+        a.x {
+            background-color: #000;
+        }
+        a.linkedin {
+            background-color: #0a66c2;
+        }
+        a.facebook {
+            background-color: #1877f2;
+        }
+        a.instagram {
+            background-color: #e4405f;
+        }
+        a.github {
+            background-color: #181717;
+        }
+        a.mail {
+            background-color: #ea4335;
+        }
+    }
+
+    a.click_to_view {
+        display: inline-block;
+        width: 206px;
+    }
+    a.click_to_view + a.click_to_view {
+        margin-left: 10px;
+    }
+    a.click_to_view::after {
+        display: none;
+    }
+    .preview_pic {
+        max-width: 206px;
+        border: 3px solid $second-color;
+        transition: border 0.3s ease;
+    }
+    a.click_to_view:hover .preview_pic {
+        border: 3px solid $first-color;
+    }
+    .preview_pic + .preview_pic {
+        margin-right: 10px;
+    }
+}
+.content-wide {
+    flex-grow: 1;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.content-full {
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-container#map {
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    iframe {
+        border: none;
+        height: 400px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.right_sidebar {
+    @include xs {
+        width: 100%;
+    }
+    @include sm {
+        width: 100%;
+    }
+    @include md {
+        width: 300px;
+    }
+}
+.right_sidebar_opposite {
+    @include xs {
+        width: 100%;
+    }
+    @include sm {
+        width: 100%;
+    }
+    @include md {
+        width: calc(100% - 420px);
+    }
+}

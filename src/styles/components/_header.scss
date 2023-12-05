@@ -1,0 +1,78 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 600px;
+    border-bottom: 10px solid $border-separators;
+
+    @include xs() {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header-title {
+        background-color: $background-color-dark;
+        grid-column-start: 1;
+        text-align: center;
+        position: relative;
+
+        .introduction {
+            display: inline-block;
+            position: absolute;
+            font-family: $headline_font;
+            padding: 1.5vw 2vw 0.5vw 2vw;
+            font-size: 100px;
+            font-size: 3.5vw;
+            color: $first-color;
+            line-height: 3.5vw;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            min-width: 34vw;
+            border: 3px solid $first-color;
+            text-align: left;
+
+            @include xs() {
+                width: calc(100% - 30px);
+                font-size: 30px;
+                padding: 20px;
+            }
+        }
+        .introduction p {
+            margin-bottom: 14px;
+
+            @include xs {
+                margin-top: 15px;
+            }
+        }
+        .introduction p:first-of-type {
+            color: $font-color-light;
+        }
+        .introduction p:last-of-type {
+            font-size: 2.5vw;
+
+            @include xs() {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .header-image {
+        grid-column-start: 2;
+
+        @include xs() {
+            grid-column-start: 1;
+        }   
+    }
+
+    .github:after {
+        background-color: #fff !important;
+    }
+}
+
+body.home {
+    .header {
+        height: 100vh;
+    }
+}
